@@ -34,7 +34,7 @@ class NumberActivity : AppCompatActivity() {
             }
             else{
                 var intent = Intent(this,OTPActivity::class.java)
-                intent.putExtra("number",binding.PhoneNumber.text!!)
+                intent.putExtra("number",binding.PhoneNumber.text!!.toString())
                 startActivity(intent)
             }
         }
